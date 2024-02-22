@@ -14,7 +14,7 @@ function fetchTasks() {
         .then(data => {
             const tasksList = document.getElementById('tasksList');
             tasksList.innerHTML = ''; // Effacer la liste actuelle
-            debugger;
+            
             data.tasks.forEach(task => { // S'assurer que 'tasks' est la clé correcte retournée par la fonction Lambda
                 const li = document.createElement('li');
                 li.textContent = task.Description; 
